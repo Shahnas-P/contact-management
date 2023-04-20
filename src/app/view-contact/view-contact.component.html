@@ -1,0 +1,39 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <h1><span class="text-success">
+               <i class="fa-solid fa-user"></i></span>&nbsp; View Contact page &nbsp;
+            </h1>
+            <p class="mt-4" style="text-align: justify;">This is dummy data:Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit.
+                Integer et luctus ex, ut
+                fermentum enim. Curabitur gravida maximus velit vel dictum. Donec pellentesque diam est, nec ornare
+                nulla iaculis in. Aliquam convallis purus sit amet felis convallis, vitae commodo quam condimentum. Cras
+                aliquam, enim eget feugiat luctus, felis nulla suscipit felis, at porta turpis felis sed nunc. Sed eu
+                ligula eu odio iaculis efficitur ut in mi. Etiam non augue ornare justo faucibus laoreet</p>
+        </div>
+    </div>
+</div>
+<!-- view Contact design -->
+<div class="container mt-4 mb-5">
+    <div class="row border p-5 align-item-center">
+        <div class="col-lg-4 text-center">
+            <!-- contact-img -->
+            <img height="170px" width="170px" class="rounded-circle"
+         [src]="contact['photo']" [alt]="contact['name']">
+        <br>
+        <!-- back button to all component page link -->
+        <a routerLink="" class="btn btn-warning mt-2"><i class="fa-solid fa-circle-arrow-left"></i>&nbsp;Go Back</a>
+        </div>
+        <div class="col-lg-6">
+            <!-- contact-details -->
+            <ul class="list-group">
+                <li class="list-group-item">Name: <b>{{contact['name']}}</b></li>
+                <li class="list-group-item">Email: <b>{{contact['email']}}</b></li>
+                <li class="list-group-item">Mobile: <b>{{contact['mobile']}}</b></li>
+                <li class="list-group-item">Company: <b>{{contact['company']}}</b></li>
+                <li class="list-group-item">Group: <b>{{groupName}}</b></li>
+            </ul>
+        </div>
+</div>
+</div>
